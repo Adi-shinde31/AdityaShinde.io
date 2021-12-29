@@ -1,0 +1,184 @@
+*{
+	margin : 0px;
+	border: 0px;
+	box-sizing: border-box;
+}
+body{
+	background-color:beige;
+}
+nav{
+	z-index: 999;
+}
+ul{
+	background-color:rgb(53, 44, 44);
+	opacity: .9;
+	margin-top: 5px;
+	height :50px;
+	border-radius: 40px;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+}
+ul li{
+	float : right;	
+	list-style: none;
+	margin: 5px 25px; 
+}
+ul li a{
+	text-decoration: none;
+	padding: 10px;
+	color: white;
+	display: inline-block;
+}
+ul #logo{
+	color : white;
+	margin-top: 5px;
+	display: inline-block;
+	font-family: 'Architects Daughter', cursive;
+	font-size: 30px;
+}
+ul li a:hover{
+	color: black;
+	background-color: white;
+	border-radius: 3px;
+	transition: .4s ease-out;
+}
+
+/* SECTION main */
+
+#main{
+	/* background-color: red; */
+	display: flex;
+}
+.info{
+	/* background-color: aqua; */
+	margin: 50px auto;
+	width: 75vw;
+	height:80vh;
+	display: flex;
+	justify-content: space-around;
+}
+
+.info .devInfo{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	
+}
+#main .info .devInfo .start{
+	font-size: 40px;
+}
+.hello{
+	color:red;
+}
+.name{
+	font-size: 60px;
+}
+.myInfo{
+	margin-top: 5px;
+}
+svg{
+	position: absolute;
+	/* background-color: aquamarine; */
+	/* opacity: .4; */
+}
+
+#main .pic img{
+	margin-top: 35px;
+	display: flex;
+	height : 80vh; 
+}
+
+/* SECTION About */
+#About{
+	height : 600px;
+}
+
+#About .heading{
+	margin-top: 0px;
+	text-align: center;
+}
+
+#About .container h1{
+	padding-top: 60px;
+	font-size: 70px;
+}
+.container .under-about::before{
+	content:"";
+	position : absolute;
+	left : 50%;
+	width : 210px;
+	height : 3px;
+	margin-top: 3px;
+	background-color: #000;
+	transform: translate(-50%);
+}
+
+.container .under-about::after{
+	content: "Who I am ?";
+	position: absolute;
+	padding: 0 5px;
+	margin-top: -5px;
+	left: 50%;
+	transform: translate(-50%);
+	background-color: beige;
+}
+
+.box{
+	display: flex;
+	height: 446px;z-index: 998;
+	justify-content: space-around;
+
+}
+.container .imgholder img{
+	width : 320px;
+	margin : 40px 80px;
+	border-radius: 10px;
+	box-shadow: 2px 3px 3px 2px rgb(43, 42, 42),
+	4px 6px 3px 2px rgb(138, 131, 131);
+}
+
+.container .box .imgcontent {
+	align-items: center;
+	width: 40%;
+	height:380px;
+	padding:10px;
+	margin-top: 60px;
+}
+
+.container .box .imgcontent p{
+	font-size: 20px;
+	text-align: justify;
+}
+
+/* SECTION skills */
+
+#skill .container{
+	width : 100%;
+	height: 550px;
+}
+#skill .container h1{
+	padding-top: 50px;
+	font-size: 70px;
+	text-align: center;
+}
+#skill .under-skill::before{
+	content:"";
+	position : absolute;
+	left : 50%;
+	width : 140px;
+	height : 3px;
+	background-color: #000;
+	transform: translate(-50%);
+}
+.container .skills-list{
+	/* background-color: red; */
+}
+.container .skills-list img{
+	width: 150px;
+    	margin: 30px 81px;
+}
+img[src="../img/css.png"]{
+	height: 168px;
+    	width: 140px;
+}
