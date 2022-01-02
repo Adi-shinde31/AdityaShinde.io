@@ -14,6 +14,7 @@
 </head>
 <body>
 
+	
 	<header>
 		<nav>
 			<ul>
@@ -23,12 +24,13 @@
 					<li><a href="#About">About me</a></li>
 					<li><a href="#skill">Skills</a></li>
 					<li><a href="#project">Projects</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</div>
 			</ul>
 		</nav>
 	</header>
 
+<main>
 	<section id="main">
 		<div class="info">
 			<div class="devInfo">	  
@@ -89,41 +91,98 @@
 			<span class="underline"></span>
 			<div class="project-name">
 				<div class="parallaxwebsite">
-					<img src="../img/projects/ParallaxWebsite.jpg" alt="" srcset="">
+					<div class="card-image imgparallaxwebsite">
+					</div>
+					<!-- <img src="../img/projects/ParallaxWebsite.jpg" alt="" srcset=""> -->
 					<div class="projectheading">
 						<h2>Parallax Website</h2>
 					</div>
 				</div>
 				<div class="phonebook">
-					<img src="../img/projects/PhoneBook.jpg" alt="" srcset="">
+					<div class="card-image imgphonebook">
+					</div>
+					<!-- <img src="../img/projects/PhoneBook.jpg" alt="" srcset=""> -->
 					<div class="projectheading">
 						<h2>PhoneBook</h2>
 					</div>
 				</div>
 				<div class="snakeandladder">
-					<img src="../img/projects/SnakeAndLadder.png" alt="" srcset="">
-					<div class="projectheading">
-						<h2>Snake & Ladder</h2>
+					<div class="card-image imgsnakeandladder">
 					</div>
+						<!-- <img src="../img/projects/SnakeAndLadder.png" alt="" srcset=""> -->
+						<div class="projectheading">
+							<h2>Snake & Ladder</h2>
+						</div>
 				</div>
 				<div class="tributepage">
-					<img src="../img/projects/TributePage.jpg" alt="" srcset="">
+					<div class="card-image imgtributepage">
+					</div>
+					<!-- <img src="../img/projects/TributePage.jpg" alt="" srcset=""> -->
 					<div class="projectheading">
 						<h2>Tribute Page</h2>
 					</div>
 				</div>
 				<div class="webform">
-					<img src="../img/projects/WebForm.jpg" alt="" srcset="">
+					<div class="card-image imgwebform">
+					</div>
+					<!-- <img src="../img/p`rojects/WebForm.jpg" alt="" srcset=""> -->
 					<div class="projectheading">
 						<h2>Web Form</h2>
 					</div>
 				</div>
-
 			</div>
 		</div>
 	</section>
 
+
+	<section id="contact">
+		<div class="container">
+			<div class="heading">
+				<h1>Contact</h1>
+				<span class="underline"></span>
+			</div>
+			<div class="contact-ways">
+				<div class="contactThroughSocialMedia">
+					<img src="../img/socialmedia/Instagram.png" alt="Instagram.png" srcset="">
+					<img src="../img/socialmedia/Facebook.png" alt="Facebook.png" srcset="">
+					<img src="../img/socialmedia/Github.png" alt="Github.png" srcset="">
+					<img src="../img/socialmedia/Twitter.png" alt="Twitter.png" srcset="">
+					<img src="../img/socialmedia/Linkedin.png" alt="Linkedin.png" srcset="">
+					<img src="../img/socialmedia//Fiverr.png" alt="Fiverr.png" srcset="">
+				</div>
+				<div class="contactThroughForm">
+					<form action="#">
+						<div class="wrapper">
+							<div class="fname">
+								<label for="firstname"></label>
+								<input type="text" name="username" id="firstname" placeholder="First Name" required>							
+							</div>
+							<div class="lname">
+								<label for="lastname"></label>
+								<input type="text" name="userlastname" id="lastname" placeholder="Last Name" required>
+							</div>
+							<div class="mail">
+								<label for="email-id"></label>
+								<input type="email" name="useremail" id="email-id" placeholder="Email ID" required>
+							</div>
+							<div class="messagebox">
+								<textarea name="usermessage" placeholder="Message..." id="message" cols="30" rows="10" required></textarea>
+							</div>
+							<button class="send" type="submit">Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+	</section>
+</main>
+
+<footer>
 	
+
+</footer>
+
+
+
 </body>
 <script src="script.js"></script>
 </html>

@@ -51,11 +51,9 @@ ul li a:hover{
 /* SECTION main */
 
 #main{
-	/* background-color: red; */
 	display: flex;
 }
 .info{
-	/* background-color: aqua; */
 	margin: 50px auto;
 	width: 75vw;
 	height:80vh;
@@ -83,8 +81,6 @@ ul li a:hover{
 }
 svg{
 	position: absolute;
-	/* background-color: aquamarine; */
-	/* opacity: .4; */
 }
 
 #main .pic img{
@@ -139,7 +135,7 @@ svg{
 	margin : 40px 80px;
 	border-radius: 10px;
 	box-shadow: 2px 3px 3px 2px rgb(43, 42, 42),
-	4px 6px 3px 2px rgb(138, 131, 131);
+			  4px 6px 3px 2px rgb(138, 131, 131);
 }
 
 .container .box .imgcontent {
@@ -159,7 +155,7 @@ svg{
 
 .container{
 	width : 100%;
-	height: 568px;
+	/* height: 568px; */
 }
 .container h1{
 	padding-top: 50px;
@@ -195,22 +191,40 @@ img[src="../img/skills/css.png"]{
 	display: grid;
 	grid-template-rows: repeat(2, 1fr);
 	grid-template-columns: repeat(3, 1fr);
+	row-gap: 30px;
+	column-gap: 10px;
 	place-items: center;
 }
-#project img{
-	height:200px;
-	margin-top: 20px;
+
+#project .card-image{
+	background-color: red;
+	width:200px;
+	height:185px;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
-#project img:hover{
-	opacity: .5;
-	background-color: blue;
+#project .imgparallaxwebsite{
+	background-image: url("../img/projects/ParallaxWebsite.jpg");
 }
+#project .imgphonebook{
+	background-image: url("../img/projects/PhoneBook.jpg");
+}
+#project .imgsnakeandladder{
+	background-image: url("../img/projects/SnakeAndLadder.png");
+}
+#project .imgtributepage{
+	background-image: url("../img/projects/TributePage.jpg");
+}
+#project .imgwebform{
+	background-image: url("../img/projects/WebForm.jpg");
+}
+
 #project .container .project-name h2{
 	text-align: center;
 	padding-top: 10px;
-	margin-top: -4px ;
+	/* margin-top: -4px ; */
 }
 .projectheading{
 	width: 100%;
@@ -222,6 +236,73 @@ img[src="../img/skills/css.png"]{
 	border-bottom-right-radius: 5px;
 }
 
+.parallaxwebsite:hover, .phonebook:hover, .snakeandladder:hover,
+.tributepage:hover, .webform:hover{
+	opacity: .5;
+}
 
+/* SECTION contact */
 
+#contact .container{
+	width: 100%;
+	height: 600px;
+	/* background-color:darkgrey; */
+}
 
+.contact-ways{
+	width: 100%;
+	height :450px;
+	/* background-color: blue; */
+	display: grid;
+	grid-template-columns:1fr 1fr;
+	grid-template-rows:  1fr;
+	justify-content: center;
+	align-items: center;
+}
+
+.contactThroughSocialMedia{
+	/* background-color: crimson; */
+}
+.contactThroughSocialMedia img{
+	margin: 20px 30px;
+	height: 100px;
+	place-content: center;
+}
+.contactThroughForm{
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.wrapper{
+	background-color: rgb(95, 90, 90);
+	padding: 20px;	
+	border-radius: 5px;
+	margin-top: 10px;
+}
+.fname, .lname, .mail{
+	/* background-color: red; */
+	width: 100%;
+	margin: 10px 0px;
+	width: 300px;
+}
+.contactThroughForm input,
+.contactThroughForm textarea{
+	/* min-width: 100px; */
+	padding: 10px;
+	width: 100%;
+	border-radius: 5px;
+}
+.contactThroughForm textarea{
+	resize:vertical;
+	min-height: 35px;
+	max-height:200px;
+}
+.contactThroughForm .send{
+	margin-top:10px;
+	padding: 10px;
+	border-radius: 5px;
+	width: 100px;
+}
