@@ -1,23 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hey-Aditya</title>
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Hey-Aditya</title>
+	
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Dancing+Script:wght@700&family=Exo+2:wght@500&family=Luxurious+Roman&family=Moon+Dance&family=Waterfall&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
 
 	
 	<header>
-		<nav>
+		<nav class="titlebar">
 			<ul>
+				<input type="checkbox" id="check">
+				<label for="check" class="checkbtn">
+					<i class="fas fa-bars"></i>
+				</label>
 				<div id="logo">HEY-ADITYA</div>
 				<div class="menu">
 					<li><a href="#main">Home</a></li>
@@ -33,20 +47,18 @@
 <main>
 	<section id="main">
 		<div class="info">
-			<div class="devInfo">	  
-				<div class="start"><span class="hello">Hello!</span> I am </div>
-				<div class="name">Aditya Shinde</div>
-				<div class="myInfo">C/C++ Developer & Web Designer !!</div>
+			<div class="devInfo">	
+				<div class="package">
+					<div class="start"><span class="hello">Hi,</span> I am </div>
+					<div class="name">Aditya Shinde</div>
+					<div class="myInfo">C/C++ Developer & Web Designer !!</div>
+				</div>  
 			</div>
-			<svg height="500" width="100%">
-				<line x1="650" y1="300" x2="800" y2="100" style="stroke:rgb(102, 47, 47);stroke-width:5" />
-				<line x1="650" y1="300" x2="800" y2="450" style="stroke:rgb(102, 47, 47);stroke-width:5" />
-
-				<line x1="1200" y1="300" x2="1050" y2="100" style="stroke:rgb(102, 47, 47);stroke-width:5" />
-				<line x1="1200" y1="300" x2="1050" y2="450" style="stroke:rgb(102, 47, 47);stroke-width:5" />
-			   </svg>	
-			<div class="pic"><img src="../img/Pic.png" alt="Pic.png"></div>
-			
+			<div class="profileimgarea">
+				<div class="pic">
+					<img src="../img/Pic.png" alt="Pic.png">
+				</div>
+			</div>
 		</div>
 	</section>
 	
@@ -90,46 +102,51 @@
 			<h1>Projects</h1>
 			<span class="underline"></span>
 			<div class="project-name">
-				<div class="parallaxwebsite">
-					<div class="card-image imgparallaxwebsite">
+				<a href="https://github.com/Adi-shinde31/ParallaxWebsite" target="_blank" rel="noopener noreferrer">
+					<div class="projectarea parallaxwebsite">
+						<div class="card-image imgparallaxwebsite">
+						</div>
+						<div class="projectheading">
+							<h2>Parallax Website</h2>
+						</div>
 					</div>
-					<!-- <img src="../img/projects/ParallaxWebsite.jpg" alt="" srcset=""> -->
-					<div class="projectheading">
-						<h2>Parallax Website</h2>
+				</a>
+				<a href="https://github.com/Adi-shinde31/PhoneBook" target="_blank" rel="noopener noreferrer">
+					<div class="projectarea phonebook">
+						<div class="card-image imgphonebook">
+						</div>
+						<div class="projectheading">
+							<h2>PhoneBook</h2>
+						</div>
 					</div>
-				</div>
-				<div class="phonebook">
-					<div class="card-image imgphonebook">
-					</div>
-					<!-- <img src="../img/projects/PhoneBook.jpg" alt="" srcset=""> -->
-					<div class="projectheading">
-						<h2>PhoneBook</h2>
-					</div>
-				</div>
-				<div class="snakeandladder">
-					<div class="card-image imgsnakeandladder">
-					</div>
-						<!-- <img src="../img/projects/SnakeAndLadder.png" alt="" srcset=""> -->
+				</a>
+				<a href="https://github.com/Adi-shinde31/Snake-And-Ladder" target="_blank" rel="noopener noreferrer">
+					<div class="projectarea snakeandladder">
+						<div class="card-image imgsnakeandladder">
+						</div>
 						<div class="projectheading">
 							<h2>Snake & Ladder</h2>
 						</div>
-				</div>
-				<div class="tributepage">
-					<div class="card-image imgtributepage">
 					</div>
-					<!-- <img src="../img/projects/TributePage.jpg" alt="" srcset=""> -->
-					<div class="projectheading">
-						<h2>Tribute Page</h2>
+				</a>
+				<a href="https://github.com/Adi-shinde31/Tributepage" target="_blank" rel="noopener noreferrer">
+					<div class="projectarea tributepage">
+						<div class="card-image imgtributepage">
+						</div>
+						<div class="projectheading">
+							<h2>Tribute Page</h2>
+						</div>
 					</div>
-				</div>
-				<div class="webform">
-					<div class="card-image imgwebform">
+				</a>
+				<a href="https://github.com/Adi-shinde31/WebForm" target="_blank" rel="noopener noreferrer">
+					<div class="projectarea webform">
+						<div class="card-image imgwebform">
+						</div>
+						<div class="projectheading">
+							<h2>Web Form</h2>
+						</div>
 					</div>
-					<!-- <img src="../img/p`rojects/WebForm.jpg" alt="" srcset=""> -->
-					<div class="projectheading">
-						<h2>Web Form</h2>
-					</div>
-				</div>
+				</a>
 			</div>
 		</div>
 	</section>
@@ -143,16 +160,30 @@
 			</div>
 			<div class="contact-ways">
 				<div class="contactThroughSocialMedia">
-					<img src="../img/socialmedia/Instagram.png" alt="Instagram.png" srcset="">
-					<img src="../img/socialmedia/Facebook.png" alt="Facebook.png" srcset="">
-					<img src="../img/socialmedia/Github.png" alt="Github.png" srcset="">
-					<img src="../img/socialmedia/Twitter.png" alt="Twitter.png" srcset="">
-					<img src="../img/socialmedia/Linkedin.png" alt="Linkedin.png" srcset="">
-					<img src="../img/socialmedia//Fiverr.png" alt="Fiverr.png" srcset="">
+					<div class="mediawrapper">
+						<abbr title="Instagram">
+							<a href="https://www.instagram.com/_mi_aditya.shinde_/" target="_blank" rel="noopener noreferrer"><img src="../img/socialmedia/Instagram.png" alt="Instagram.png" srcset=""></a>
+						</abbr>
+						<abbr title="Facebook">
+							<a href="https://www.facebook.com/profile.php?id=100025538049834" target="_blank" rel="noopener noreferrer"><img src="../img/socialmedia/Facebook.png" alt="Facebook.png" srcset=""></a>
+						</abbr>
+						<abbr title="Github">
+							<a href="https://github.com/Adi-shinde31" target="_blank" rel="noopener noreferrer"><img src="../img/socialmedia/Github.png" alt="Github.png" srcset=""></a>
+						</abbr>
+						<abbr title="Twitter">
+							<a href="" target="_blank" rel="noopener noreferrer"><img src="../img/socialmedia/Twitter.png" alt="Twitter.png" srcset=""></a>
+						</abbr>
+						<abbr title="Linkedin">
+							<a href="https://www.linkedin.com/in/adi-shinde31/" target="_blank" rel="noopener noreferrer"><img src="../img/socialmedia/Linkedin.png" alt="Linkedin.png" srcset=""></a>
+						</abbr>
+						<abbr title="Fiverr">
+							<a href="https://www.fiverr.com/adi_shinde31" target="_blank" rel="noopener noreferrer"><img src="../img/socialmedia//Fiverr.png" alt="Fiverr.png" srcset=""></a>
+						</abbr>
+					</div>
 				</div>
 				<div class="contactThroughForm">
 					<form action="#">
-						<div class="wrapper">
+						<div class="formwrapper">
 							<div class="fname">
 								<label for="firstname"></label>
 								<input type="text" name="username" id="firstname" placeholder="First Name" required>							
@@ -177,7 +208,11 @@
 </main>
 
 <footer>
-	
+	<div class="endbox">
+		<div class="copyrightmesssge">
+			Copyright &copy; 2022 Aditya Shinde, All rights reversed.
+		</div>
+	</div>
 
 </footer>
 
