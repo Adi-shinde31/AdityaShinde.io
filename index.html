@@ -20,7 +20,7 @@
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Dancing+Script:wght@700&family=Exo+2:wght@500&family=Luxurious+Roman&family=Moon+Dance&family=Waterfall&display=swap" rel="stylesheet">
 
-
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -96,55 +96,6 @@
 			</div>
 		</div>
 	</section>
-	
-	<!-- <section id="project">
-		<div class="container">
-			<h1>Projects</h1>
-			<span class="underline"></span>
-			<div class="project-name">
-				<div class="projectarea parallaxwebsite">
-					<div class="card-image imgparallaxwebsite">
-					</div>
-					<div class="projectheading">
-						<h2>Parallax Website</h2>
-					</div>
-				</div>
-			</a>
-			<div class="projectarea phonebook">
-				<div class="card-image imgphonebook">
-				</div>
-				<div class="projectheading">
-					<h2>PhoneBook</h2>
-				</div>
-			</div>
-			</a>
-			<div class="projectarea snakeandladder">
-				<div class="card-image imgsnakeandladder">
-				</div>
-				<div class="projectheading">
-					<h2>Snake & Ladder</h2>
-				</div>
-			</div>
-		</a>
-		<div class="projectarea tributepage">
-			<div class="card-image imgtributepage">
-			</div>
-			<div class="projectheading">
-					<h2>Tribute Page</h2>
-				</div>
-			</div>
-		</a>
-		<div class="projectarea webform">
-			<div class="card-image imgwebform">
-			</div>
-			<div class="projectheading">
-				<h2>Web Form</h2>
-			</div>
-		</div>
-	</a>
-</div>
-</div>
-</section> -->
 
 <section id="project">
 	<div class="container">
@@ -183,6 +134,7 @@
 			</a>
 		</div>
 	</section>
+
 	<section id="contact">
 		<div class="container">
 			<div class="heading">
@@ -192,28 +144,19 @@
 			<div class="contact-ways">
 				<div class="contactThroughSocialMedia">
 					<div class="mediawrapper">
-						<abbr title="Instagram">
-							<a href="https://www.instagram.com/_mi_aditya.shinde_/" target="_blank" rel="noopener noreferrer"><img src="../img/socialmedia/Instagram.png" alt="Instagram.png" srcset=""></a>
-						</abbr>
-						<abbr title="Facebook">
-							<a href="https://www.facebook.com/profile.php?id=100025538049834" target="_blank" rel="noopener noreferrer"><img src="../img/socialmedia/Facebook.png" alt="Facebook.png" srcset=""></a>
-						</abbr>
-						<abbr title="Github">
-							<a href="https://github.com/Adi-shinde31" target="_blank" rel="noopener noreferrer"><img src="../img/socialmedia/Github.png" alt="Github.png" srcset=""></a>
-						</abbr>
-						<abbr title="Twitter">
-							<a href="" target="_blank" rel="noopener noreferrer"><img src="../img/socialmedia/Twitter.png" alt="Twitter.png" srcset=""></a>
-						</abbr>
-						<abbr title="Linkedin">
-							<a href="https://www.linkedin.com/in/adi-shinde31/" target="_blank" rel="noopener noreferrer"><img src="../img/socialmedia/Linkedin.png" alt="Linkedin.png" srcset=""></a>
-						</abbr>
-						<abbr title="Fiverr">
-							<a href="https://www.fiverr.com/adi_shinde31" target="_blank" rel="noopener noreferrer"><img src="../img/socialmedia//Fiverr.png" alt="Fiverr.png" srcset=""></a>
-						</abbr>
+						<div class="media">
+							<a href="https://www.instagram.com/_mi_aditya.shinde_/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram instagram-icon"></i></a>
+							<a href="https://www.facebook.com/profile.php?id=100025538049834" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook facebook-icon"></i></a>
+							<a href="https://github.com/Adi-shinde31" target="_blank" rel="noopener noreferrer"><i class="fab fa-github github-icon"></i></a>
+						</div>
+						<div class="media">
+							<a href="         # " target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter twitter-icon"></i></a>
+							<a href="https://www.linkedin.com/in/adi-shinde31/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin linkedin-icon"></i></a>
+						</div>
 					</div>
 				</div>
 				<div class="contactThroughForm">
-					<form action="#">
+					<form action="POST" data-netlify=true>
 						<div class="formwrapper">
 							<div class="fname">
 								<label for="firstname"></label>
@@ -230,6 +173,7 @@
 							<div class="messagebox">
 								<textarea name="usermessage" placeholder="Message..." id="message" cols="30" rows="10" required></textarea>
 							</div>
+							<div class="recaptcha" data-netlify-recaptcha=true></div>
 							<button class="send" type="submit">Submit</button>
 						</div>
 					</form>

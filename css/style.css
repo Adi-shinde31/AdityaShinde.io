@@ -278,17 +278,45 @@ ul li a:hover{
 }
 .mediawrapper{
 	display: grid;
-	grid-template-columns:1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
 	grid-row-gap:30px ;
 	grid-column-gap:35px; 
 	width:fit-content;
 	height: fit-content;
 }
-.contactThroughSocialMedia img{
-	width: 100px;
-	height: 100px;
-	place-content: center;
+.media{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.contact-ways .mediawrapper i{
+	font-size: 60px;
+	text-align: center;
+	margin: 0 25px;
+	border-radius: 50%;
+	padding:15px;
+}
+.contact-ways .mediawrapper a{
+	text-decoration: none;
+	color: #000;
+}
+.contact-ways .mediawrapper i:hover{
+	transition: .4s ease-out;
+	color: #fff;
+}
+.contact-ways .mediawrapper .instagram-icon:hover{
+	background: linear-gradient(45deg,#fccc63, #fbad50, #e95950 , #cd486b,#bc2a8d, #8a3ab9);
+}
+.contact-ways .mediawrapper .facebook-icon:hover{
+	background-color: #4267B2;
+}
+.contact-ways .mediawrapper .github-icon:hover{
+	background-color: #000;
+}
+.contact-ways .mediawrapper .twitter-icon:hover{
+	background-color: #00acee;
+}
+.contact-ways .mediawrapper .linkedin-icon:hover{
+	background-color: #0077b5;
 }
 
 .contactThroughForm{
@@ -297,7 +325,6 @@ ul li a:hover{
 	justify-content: center;
 	align-items: center;
 }
-
 .formwrapper{
 	width: 100%;
 	background-color: rgb(95, 90, 90);
@@ -397,6 +424,13 @@ ul li a:hover{
 	#project .container .project-container h2{
 		font-size: 20px;
 	}
+	.mediawrapper {
+		grid-row-gap: 10px;
+	}
+	.contact-ways .mediawrapper i{
+		font-size: 50px;
+		margin: 0 20px;
+	}
 
 	/* contacts */
 	.contactThroughSocialMedia img{
@@ -448,8 +482,7 @@ ul li a:hover{
 
 	/* about */
 	.container .imgholder img{
-		/* width : 230px; */
-		width : 300px;
+gi		width : 300px;
 	}
 	.container .box .imgcontent p{
 		font-size: 16px;
@@ -476,17 +509,18 @@ ul li a:hover{
 	.formwrapper{
 		width: 70vw;
 	}
-	.mediawrapper{
-		grid-template-columns:repeat(6,1fr);
-		grid-template-rows: 1fr; 
-	}	
 	.contactThroughForm .send{
 		width: 100%;
 	}
-	.contactThroughSocialMedia img{
-		margin: 20px 0;
-		width: 45px;
-		height: 45px;
+	.mediawrapper{
+		display: flex;
+		justify-content: center;
+		grid-column-gap:0;
+	}
+	.contact-ways .mediawrapper i{
+		font-size: 30px;
+		margin: 0 15px;
+		margin-bottom: 10px;
 	}
 
 	/* footer */
@@ -515,11 +549,9 @@ ul li a:hover{
 		flex-direction: column;
 		align-items: center;
 	}
-	
 	.container .imgholder img{
 		width : 300px;
 	}
-	
 	.container .box .imgcontent {
 		align-items: center;
 		width: 80%;
@@ -536,12 +568,6 @@ ul li a:hover{
 		font-size: 18px;
 	}
 
-	/* contact */
-	.contactThroughSocialMedia img {
-		width: 26px;
-		height: 26px;
-	}
-	
 	/* footer */
 	.copyrightmesssge{
 		font-size: 15px;
@@ -550,29 +576,49 @@ ul li a:hover{
 }
 
 @media (max-width:460px){
+	ul #logo {
+		font-size: 27px;
+	}
+	.titlebar ul .checkbtn i{
+		font-size: 20px;
+	}
+	ul #logo {
+		margin-left: -20px;
+	}
+	
 	/* main */
 	#main .info .devInfo .start{
 		font-size: 13px;
 	}
 	.name {
 		font-size: 32px;
-	 }
-	 .myInfo {
+	}
+	.myInfo {
 		font-size: 8px;
-	 }
-	 #main .pic img {
+	}
+	#main .pic img {
 		height: 70vh;
-	 }
-
-
-	 /* projects */
-	 .project-container{
+	}
+	
+	/* projects */
+	.project-container{
 		width: 140px;
 	}
 	#project .container .project-container h2{
 		font-size: 15px;
 	}
-
+	.contact-ways .mediawrapper i {
+		font-size: 26px;
+		margin: 0px 0px;
+		margin-bottom: 5px;
+	}
+	
+	/* contact */
+	.formwrapper {
+		width: 88vw;
+		padding: 18px;
+	}
+	
 	/* footer */
 	.copyrightmesssge{
 		font-size: 12px;
@@ -580,6 +626,12 @@ ul li a:hover{
 }
 @media (max-width: 355px)
 {
+	ul #logo {
+		margin-top: 10px;
+		font-size: 22px;
+		margin-left: -22px;
+	}
+	
 	/* main */
 	.name {
 		font-size: 25px;
@@ -629,18 +681,70 @@ ul li a:hover{
 		font-size: 11px;
 	}
 	
-	
-	/* contact */
-	.mediawrapper {
-		grid-column-gap: 18px;
-	}
-	
-	footer
+	/* footer  */
 	.copyrightmesssge {
 		font-size: 10px;
 	}
 }
 
-@media (max-width:275px){
+@media (max-width:300px){
+	ul #logo {
+		margin-top: 14px;
+		font-size: 18px;
+	}
+	.titlebar ul .checkbtn i{
+		font-size: 18px;
+		margin-right: -16px;
+	}
+
+	/* main */
+	.name {
+		font-size: 20px;
+	}
+	.myInfo {
+		font-size: 5px;
+	}
+	#main .pic img {
+		height: 52vh;
+	}
 	
+	/* about */
+	#About .container h1 {
+		font-size: 45px;
+	}
+	.container .under-about::before {
+		width: 140px;
+	}
+	.container .under-about::after {
+		font-size: 10px;
+		margin-top: -2px;
+	}
+	.container .imgholder img {
+		width: 180px;
+	}
+	.container .box .imgcontent p {
+		font-size: 14px;
+	}
+	
+	/* skills */
+	.container .skills-list img {
+		width: 85px;
+	}
+	
+	/* projects */
+	.project-container {
+		width: 95px;
+	}
+	#project .container .project-container h2 {
+		font-size: 10px;
+	}
+	
+	/* contact */
+	.formwrapper {
+		width: 88vw;
+		padding: 18px;
+	}
+	.contact-ways .mediawrapper i {
+		padding: 10px;
+	}
 }
