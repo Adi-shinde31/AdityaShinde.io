@@ -10,6 +10,15 @@ html{
 	scroll-behavior: smooth;
 }
 
+#loading{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	z-index: 1001;
+	background: url(/img/preloader.gif) no-repeat center;
+}
+
+
 /* header */
 nav{
 	z-index: 999;
@@ -261,7 +270,6 @@ ul li a:hover{
 	font-size: 25px;
 }
 .project-container .project-box p{
-	padding: 10px 15px;
 	padding: 0px 20px 15px;
 	color: #00154f;
 	text-align: justify;
@@ -308,11 +316,9 @@ ul li a:hover{
 	padding: 10px;
 	margin-bottom: 5px;
 	font-size:30px;
-	font-weight: 600;
 	color:darkgray;
 	font-weight: 800;
 	text-align: center;
-	text-transform: capitalize;
 	text-decoration: underline;
 }
 .user-input, .send{
@@ -372,6 +378,7 @@ ul li a:hover{
 }
 .contactinfo .infowrapper .myContactNumber{
 	background-color: rgba(28, 156, 241, 0.933);
+	cursor: not-allowed;
 }
 .contactinfo .infowrapper .mylocation{
 	background-color: #57f792;
@@ -385,7 +392,7 @@ ul li a:hover{
 /* footer */
 .endbox{
 	width: 100%;
-	height: 80px;
+	height: fit-content;
 	background-color: rgb(48, 47, 47);
 	display: flex;
 	justify-content: center;
@@ -499,11 +506,9 @@ ul li a:hover{
 		height: fit-content;
 		display: block;
 		width: 100%;
-		background-color:rgb(53, 44, 44);
 		background-color:rgb(48, 47, 47);
 		text-align: center;
 		position: fixed;
-		top:-350px;
 		top:-105%;
 		left:0%;
 		transition: all .5s;
@@ -514,7 +519,6 @@ ul li a:hover{
 
 	/* skills */
 	.container .skills-list img {
-		width: 130px;
 		height: 130px;
 	}
 	
@@ -623,6 +627,7 @@ ul li a:hover{
 		margin-left: -20px;
 		font-size: 22px;
 	}
+
 	/* main */
 	#main .myinfo .start {
 		font-size: 45px;
@@ -637,9 +642,6 @@ ul li a:hover{
 	}
 	.container .box .imgcontent {
 		align-items: center;
-	}
-	.container .box .imgcontent p{
-		font-size: 16px;
 	}
 	
 	/* project */
@@ -684,12 +686,22 @@ ul li a:hover{
 
 	/* footer */
 	.copyrightmesssge{
-		font-size: 15px;
+		font-size: 17px;
 	}
 }
 
 /* WINDOW SCREEN WITH 450 PX */
 @media (max-width:450px){
+	/* heading  */
+	.titlebar .checkbtn {
+		top: 35%;
+	}
+
+	/* about */
+	.project-container .project-box p {
+		font-size: 19px;
+	}
+
 	/* projects */
 	.project-container .project-box {
 		flex-direction: column;
@@ -698,12 +710,13 @@ ul li a:hover{
 	.project-box, .project-box img {
 		width: 100%;
 	}
+
 	/* contacts */
 	.formwrapper {
 		width: 100vw;
 	}
 	.contactinfo .infowrapper .info-content {
-		font-size: 15px;
+		font-size: 18px;
 	}
 }
 
@@ -711,7 +724,7 @@ ul li a:hover{
 @media (max-width:375px){
 	/* heading */
 	ul #logo {
-		font-size: 18px;
+		font-size: 20px;
 	}
 	.titlebar .checkbtn {
 		font-size: 22px;
@@ -751,27 +764,15 @@ ul li a:hover{
 	}
 
 	/* footer */
-	.copyrightmesssge {
-		font-size: 13px;
-	}
-	.policy, .policy a {
-		font-size: 13px;
+	.copyrightmesssge, .policy, .policy a {
+		font-size: 16px;
 	}
 }
+
 /* WINDOW SCREEN WITH 320 PX */
 @media (max-width:320px){
 	/* contacts */
-	.contactinfo .infowrapper .info-header {
-		font-size: 31px;
-	}
 	.contactinfo .infowrapper .info-content {
 		font-size: 13px;
-	}
-	/* footer */
-	.copyrightmesssge {
-		font-size: 11px;
-	}
-	.policy, .policy a {
-		font-size: 11px;
 	}
 }
